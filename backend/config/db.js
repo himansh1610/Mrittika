@@ -1,18 +1,27 @@
 const mongoose = require('mongoose');
 
 const connectDB = async () => {
+  const mongoURI = process.env.MONGODB_URI;
+
+  if (!mongoURI) {
+    throw new Error('MONGODB_URI is not set. Add it to backend/.env before starting the server.');
+  }
+
   try {
-    const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/journeyplay';
-    
-    await mongoose.connect(mongoURI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
+    await mongoose.connect(mongoURI);
+
+    mongoose.connection.on('disconnected', () => {
+      console.warn('MongoDB disconnected. Waiting for Mongoose to reconnect...');
     });
-    
-    console.log('✓ MongoDB Connected Successfully');
+
+    mongoose.connection.on('reconnected', () => {
+      console.log('MongoDB reconnected successfully.');
+    });
+
+    console.log(`MongoDB connected: ${mongoose.connection.host}`);
     return mongoose.connection;
   } catch (error) {
-    console.error('✗ MongoDB Connection Error:', error.message);
+    console.error('MongoDB connection error:', error.message);
     process.exit(1);
   }
 };

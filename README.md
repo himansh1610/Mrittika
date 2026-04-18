@@ -73,6 +73,8 @@ npm start          # Production
 npm run dev        # Development with nodemon
 ```
 
+Note: Backend startup now waits for a successful MongoDB connection before listening on the port.
+
 Server will run on `http://localhost:5000`
 
 ### Frontend Setup
@@ -259,8 +261,13 @@ The API returns standardized error responses:
 ## Troubleshooting
 
 ### MongoDB Connection Error
-- Ensure MongoDB is running: `mongod`
-- Check `MONGODB_URI` in `.env`
+- Ensure `MONGODB_URI` exists in `backend/.env` (required)
+- Local MongoDB example: `MONGODB_URI=mongodb://localhost:27017/journeyplay`
+- Atlas example: `MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>/journeyplay?retryWrites=true&w=majority`
+- If using local MongoDB on Windows, start the service (if installed as service):
+  - `Get-Service *mongo*`
+  - `Start-Service <service-name>`
+- Or run MongoDB manually: `mongod`
 
 ### Port Already in Use
 - Backend: Change PORT in `.env`
