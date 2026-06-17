@@ -1,0 +1,93 @@
+export const artisans = [
+  {
+    id: "art-1",
+    name: "Ramesh Kushwaha",
+    region: "Dhar, Madhya Pradesh",
+    state: "Madhya Pradesh",
+    experience: "25 Years",
+    rating: 4.9,
+    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80",
+    specialty: "Terracotta Pottery & Earthen Cookware",
+    story: "Ramesh belongs to the 5th generation of traditional potters in Dhar. He started helping his father at the age of 8. Ramesh has revived the traditional clay water pot with micro-pore filtration techniques that keep water ice-cold naturally, preserving age-old cooling science.",
+    craftHistory: "Clay pottery in Dhar dates back hundreds of years, utilizing local black soil and yellow clay which is mixed in precise ratios, shaped on hand-operated wheels, and fired in community kilns (Bhattis).",
+    badges: ["Verified Artisan", "Heritage Craft"]
+  },
+  {
+    id: "art-2",
+    name: "Sunita Maheshwari",
+    region: "Maheshwar, Madhya Pradesh",
+    state: "Madhya Pradesh",
+    experience: "18 Years",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&q=80",
+    specialty: "Maheshwari & Chanderi Sarees",
+    story: "Sunita learned handloom weaving from a cooperative established by the royal family of Holkars. She works on a traditional pit loom, carefully crafting the iconic geometrical borders inspired by the stone carvings of Maheshwar Fort.",
+    craftHistory: "Maheshwari weaving was introduced by Queen Ahilyabai Holkar in the 18th century. It is known for its light weight, glossy finish, and distinctive border designs.",
+    badges: ["Heritage Craft", "Verified Artisan", "Handmade"]
+  },
+  {
+    id: "art-3",
+    name: "Madan Lal Vishwakarma",
+    region: "Gwalior, Madhya Pradesh",
+    state: "Madhya Pradesh",
+    experience: "30 Years",
+    rating: 4.9,
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+    specialty: "Teakwood Carvings & Wooden Temples",
+    story: "Madan Lal is a master carpenter who specializes in carving intricate temples and traditional figurines. He sources seasoned teakwood locally and avoids chemical sealants, using natural beeswax to polish his finished pieces.",
+    craftHistory: "Woodcraft in Madhya Pradesh is characterized by lattice work (Jali), floral relief carvings, and representations of forest gods, preserving central Indian tribal iconography.",
+    badges: ["Verified Artisan", "Eco-Friendly"]
+  },
+  {
+    id: "art-4",
+    name: "Phool Bai Gond",
+    region: "Patangarh, Madhya Pradesh",
+    state: "Madhya Pradesh",
+    experience: "15 Years",
+    rating: 5.0,
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80",
+    specialty: "Traditional Gond Paintings",
+    story: "Phool Bai uses dots and lines to capture the folklore of the Gond tribe. She paints stories of the Saja tree, forest spirits, and birds. Her work has been exhibited in regional art galleries across Bhopal and New Delhi.",
+    craftHistory: "Gond art is a form of painting from folk and tribal art that is practiced by one of the largest tribes in India. It is rooted in the belief that viewing a good image brings good luck.",
+    badges: ["Cultural Product", "Heritage Craft"]
+  },
+  {
+    id: "art-5",
+    name: "Arjun Bamaniya",
+    region: "Jhabua, Madhya Pradesh",
+    state: "Madhya Pradesh",
+    experience: "12 Years",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
+    specialty: "Bamboo Basketry & Organic Lamps",
+    story: "Arjun transforms local wild bamboo into modern utilities. He works with a self-help group of 14 youth in Jhabua, creating eco-friendly lamps and organizer baskets, providing livelihood opportunities for the local tribal community.",
+    craftHistory: "Bamboo craft is highly sustainable and deeply integrated into the daily life of Jhabua's tribal groups, using local 'Kanak' bamboo known for its strength and flexibility.",
+    badges: ["Eco-Friendly", "Handmade"]
+  },
+  {
+    id: "art-6",
+    name: "Saraswati Devi",
+    region: "Mithila, Bihar",
+    state: "Bihar",
+    experience: "22 Years",
+    rating: 4.9,
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+    specialty: "Madhubani Wall Art & Paintings",
+    story: "Saraswati learned Madhubani art from her grandmother on the mud walls of her home. She uses natural colors extracted from marigold, turmeric, and indigo to paint epics and scenes from rural festivities.",
+    craftHistory: "Madhubani painting (or Mithila painting) is a traditional style practiced in the Mithila region. It is created using fingers, twigs, brushes, nib-pens, and matchsticks.",
+    badges: ["Cultural Product", "Heritage Craft", "Verified Artisan"]
+  },
+  {
+    id: "art-7",
+    name: "Karan Johar Soni",
+    region: "Jaipur, Rajasthan",
+    state: "Rajasthan",
+    experience: "20 Years",
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80",
+    specialty: "Brass Idols & Meenakari Jewelry",
+    story: "Karan's family has been crafting spiritual idols and copperware for Jaipur's royal heritage temples. He uses lost-wax casting methods to deliver premium detail, hand-polishing each statue to perfection.",
+    craftHistory: "Jaipur is globally famous for its gemstones, jewelry, and brass casting, featuring a blend of Mughal designs and Rajasthani folklore.",
+    badges: ["Heritage Craft", "Verified Artisan"]
+  }
+];
